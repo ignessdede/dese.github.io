@@ -1,1 +1,170 @@
-<!DOCTYPE html><html lang="en"><head>  <meta charset="UTF-8">  <meta      name='viewport'      content='width=device-width, initial-scale=0.9, maximum-scale=0.9, user-scalable=0' /><title>  Translate -Id </title><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"><link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />  <script src=" https://code.responsivevoice.org/responsivevoice.js"></script><link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><script type="text/javascript" src="/app.js"></script><style>	/* Created by XerXez7 */body { margin:0; background-image: url("/beg.png"); font-family: "Montserrat"; position:fixed;  top:0;  width:100%;  height:100%; } * {     font-family: "Montserrat"; }#container { background:orange; padding-bottom:5px; }.select-lang { Text-align: center; }.select-lang span:nth-child(1) { width: 46px; float: left; }.select-lang span:nth-child(2) {display: inline-block;height: 21px;padding:10px;color:#fff;}.select-lang span:nth-child(3) { float: right; }.select-lang span select { output: none; padding:10px; background: transparent;  border: none;  color:  #fff;  font-family: "Montserrat"; }.translater-text { background:#fff; margin:0 6px 0px 6px; overflow:hidden;}.translater-text textarea { border: none; width:90%;  font-size:18px;  padding:10px;  height:50px;  outline: none;  }#translate { padding:14px; background: orange;border: none; border-radius:3px;color:#222; font-weight: bolder; margin:0 5px 5px 5px; float: right; float: down;}#clear { padding:10px; background: transparent; border: none; color:#222; font-weight: bold; margin:0 5px 5px 5px;}#clear .fa { margin-right:5px; color: dodgerblue; font-size:23px;}.output {background: dlavender; border-bottom:1px solid orange;font-family: "Montserrat";}#output { background: white; width:100%; border: 1px; font-size:24px; padding:14px; }#output:hover { height: 150px; outline: none;}.output span { display:block; color:black;text-align: right; padding:10px;}#user {    width: 900px;    font-size: 24px;}h3 {    font-family: "Montserrat";}.info {    }	</style></head><body>	<div id="app"><div class="w3-sidebar w3-bar-block w3-border-right" style="display: block" id="sbar">     <button onclick="close()" class="w3-bar-item w3-large" id="translater">Close &times;</button>  <h4 class="w3-bar-item w3-button" id="abouter">About</h4></div><div id="container"><div class="select-lang"><span><select id="dede1"></select></span><span> <i class="fa fa-exchange" onclick="open()"></i> </span><span><select id="aqil2"></select></span></div><div class="translater-text"><textarea id="user" placeholder="Enter text here..."></textarea> <button id="clear"><i class="fa fa-trash"></i> Clear</button><button id="translate">Translate</button></div></div><div class="output"><textarea id="output" placeholder="output" readonly></textarea><span> Codek By XerXez7</span> </div>  </div><div id="about"><div class="w3-container w3-orange"><div class="info">  <h2 align="center">Max-Translate</h2></div></div>    <h3>dede aqil </h3>    <div class="w3-sidebar w3-bar-block w3-border-right" style="display: block" id="sbar2">     <button onclick="close2()" class="w3-bar-item w3-large" id="translater2">Close &times;</button></div></div></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta 
+     name='viewport' 
+     content='width=device-width, initial-scale=0.9, maximum-scale=0.9, user-scalable=0' 
+/>
+<title>  Translate -Id </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />  
+<script src=" https://code.responsivevoice.org/responsivevoice.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script type="text/javascript" src="/dese.github.io/app.js"></script>
+<style>
+	/* Created by XerXez7 */
+
+
+
+
+
+body {
+
+ margin:0;
+ background-image: url("/beg.png");
+ font-family: "Montserrat";
+ position:fixed; 
+ top:0; 
+ width:100%; 
+ height:100%;
+
+ }
+ * {
+     font-family: "Montserrat";
+ }
+#container { 
+
+background:orange; padding-bottom:5px; 
+}
+.select-lang {
+
+ Text-align: center;
+ }
+.select-lang span:nth-child(1) {
+ width: 46px;
+ float: left;
+ }
+.select-lang span:nth-child(2) {
+
+display: inline-block;
+height: 21px;
+padding:10px;
+color:#fff;
+}
+.select-lang span:nth-child(3) {
+
+ float: right;
+ }
+.select-lang span select {
+ output: none;
+ padding:10px;
+ background: transparent; 
+ border: none; 
+ color:  #fff; 
+ font-family: "Montserrat";
+ }
+.translater-text { 
+background:#fff; 
+margin:0 6px 0px 6px; 
+overflow:hidden;
+}
+.translater-text textarea {
+ border: none;
+ width:90%; 
+ font-size:18px; 
+ padding:10px; 
+ height:50px; 
+ outline: none; 
+ }
+#translate { 
+padding:14px; 
+background: orange;
+border: none; 
+border-radius:3px;
+color:#222; 
+font-weight: bolder; 
+margin:0 5px 5px 5px; 
+float: right; 
+float: down;}
+#clear { 
+padding:10px; 
+background: transparent; 
+border: none; 
+color:#222; 
+font-weight: bold; 
+margin:0 5px 5px 5px;}
+#clear .fa { 
+margin-right:5px; 
+color: dodgerblue; 
+font-size:23px;}
+.output {
+background: dlavender; 
+border-bottom:1px solid orange;
+font-family: "Montserrat";
+}
+#output { 
+background: white; 
+width:100%; 
+border: 1px; 
+font-size:24px; 
+padding:14px; 
+}
+#output:hover { 
+height: 150px; 
+outline: none;}
+.output span { 
+display:block; 
+color:black;
+text-align: right; 
+padding:10px;
+}
+#user {
+    width: 900px;
+    font-size: 24px;
+}
+h3 {
+    font-family: "Montserrat";
+}
+.info {
+    
+}
+	</style>
+</head>
+<body>
+	
+<div id="app">
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display: block" id="sbar">
+     <button onclick="close()" class="w3-bar-item w3-large" id="translater">Close &times;</button>
+  <h4 class="w3-bar-item w3-button" id="abouter">About</h4>
+</div>
+<div id="container">
+<div class="select-lang">
+<span><select id="dede1"></select></span>
+<span> <i class="fa fa-exchange" onclick="open()"></i> </span>
+<span><select id="aqil2"></select></span>
+</div>
+<div class="translater-text">
+<textarea id="user" placeholder="Enter text here..."></textarea>
+ <button id="clear"><i class="fa fa-trash"></i> Clear</button>
+<button id="translate">Translate</button>
+</div>
+</div>
+<div class="output">
+<textarea id="output" placeholder="output" readonly></textarea>
+<span> Codek By XerXez7</span> 
+</div>  
+</div>
+<div id="about">
+<div class="w3-container w3-orange">
+<div class="info">  <h2 align="center">Max-Translate</h2></div>
+</div>
+    <h3>dede aqil </h3>
+    <div class="w3-sidebar w3-bar-block w3-border-right" style="display: block" id="sbar2">
+     <button onclick="close2()" class="w3-bar-item w3-large" id="translater2">Close &times;</button>
+</div>
+</div>
+</body>
+</html>
